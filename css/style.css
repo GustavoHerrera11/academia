@@ -1,10 +1,13 @@
 .fonu1 {
-	background: url(../img/backs.jpg);
+	background: url(../img/fondo.jpg);
 	background-attachment: scroll;
 	background-size: cover;
+	background-repeat: no-repeat;
 	height: auto;
-	}
-
+}
+.titulo{
+	position: relative;
+}
 .center{
 	text-align: center;
 }
@@ -14,9 +17,11 @@
 	display: block;
 }
 /*Menu*/
+
 .topnav {
   background-color: #293462;
   overflow: hidden;
+  display: block;
 }
 
 .topnav a {
@@ -182,4 +187,114 @@
 .blanco{
 	border: solid white 3px;
 	color: white;
+}
+.cargos{
+	list-style: none;
+}
+/* Menu resposivo */
+header{
+	width: 100%;
+	height: 53px;
+	background-color: #4E94AB;
+	position: fixed;
+	z-index: 1;
+}
+body{
+	margin: 0;
+}
+.glyphicon{
+	font-size: 18px;
+	color: white;
+}
+#btn-menu{
+	display: none;
+}
+header label{
+	display: none;
+	width: 50px;
+	height: 35px;
+	padding: 10px;
+	border-right: solid white 1px;
+}
+header label:hover{
+	cursor: pointer;
+	background: rgba(0, 0, 0, 0.3);
+}
+.menu ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+.seleccion{
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.menu li{
+	border-right: 1px solid white;
+}
+.menu li:hover{
+	background: rgba(0, 0, 0, 0.3);
+}
+.menu li a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+}
+
+@media (max-width: 870px) {
+	header label{
+		display: block;
+	}
+	.menu{
+		position: absolute;
+		background: #4E94AB;
+		width: 70%;
+		margin-left: -70%;
+		transition: all 0.5s;
+	}
+	.menu ul{
+		flex-direction: column;
+		display: block;
+		position: relative;
+	}
+	.menu li{
+		border-top: 1px solid white;
+	}
+	#btn-menu:checked ~ .menu{
+		margin: 0;
+		position: absolute;
+		float: none;
+	}
+}
+
+.bordus{
+	border-radius: 90px;
+	border: 4px solid white;
+}
+.borde{
+	border-style: double;
+	border-color: #f76262;
+}
+
+.linu{
+	border:1px solid white;
+}
+
+.tw{
+	color: white;
+	text-align: center;
+	font-family: impact;
+}
+.blanco{
+	border: solid white 3px;
+	color: white;
+}
+
+.cursos{
+	width: 70%;
+	height: 180px;
+	display: block;
+	border-radius: 5px;
 }
